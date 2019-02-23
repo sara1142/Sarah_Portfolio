@@ -1,3 +1,13 @@
+body {
+    margin: 0;
+    padding-top: 100px;
+    font-weight: bold;
+
+}
+
+
+
+
 .ph{
     width: 200px;
     position: relative;
@@ -20,7 +30,8 @@ nav{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
 
 }
 nav a{
@@ -36,7 +47,8 @@ nav a{
     position: absolute;
     bottom: 10px;
     right: 10px;
-}
+    font-weight: bold;
+  }
 
 h1{
     padding: 10px;
@@ -57,10 +69,6 @@ width:50px;
 
 }
 
-body {
-    margin: 0;
-    padding-top: 100px;
-}
 
 section {
     width: 80%;
@@ -73,13 +81,50 @@ section {
   } */
 
   h2 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Varela Round', sans-serif;
     text-decoration: underline;
     text-decoration-color: #ff5a3a;
     color:#ff5a3a;
     background-color: #a3d2f862;
     
   }
+  a:hover{
+    background: #90caf8;
+
+  }
+  .row {
+    display: -webkit-box; /* IE10 */
+    /* display: flex; */
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 55px;
+  }
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  
 
   .col-4 {
     width: calc(100% / 12 * 4);
@@ -87,12 +132,12 @@ section {
     
   }
   ul,p{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Varela Round', sans-serif;
     color: #90caf8;   
     /* font-size: 30px; */
   }
  h5, h3{
-    font-family: 'Permanent Marker', cursive;
+  font-family: 'Varela Round', sans-serif;
     color: #ff5a3a;  
   }
 
@@ -147,7 +192,8 @@ section {
             color: black;
             padding-left: 20px;
             padding-right: 20px;
-            font-family: 'Permanent Marker', cursive;
+            font-family: 'Varela Round', sans-serif;
+
           }
 
           * {
@@ -158,4 +204,35 @@ section {
             width: calc(100% / 12 * 4);
             padding:9px;
             right: 100px;
+        }
+
+
+        .up {
+          position: fixed;
+          right: -45%;
+          bottom: 10%;
+          width: 100%;
+          
+          text-align: center;
+          color: inherit;
+   
+        }
+
+
+.up :hover{
+  background: #ff5a3a;
+}
+
+
+        footer {
+          position: relative;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #a3d2f846;
+          font-family: 'Varela Round', sans-serif;
+    color: #ff5a3a; 
+          /* text-align: center; */
+          padding: 10px;
+          font-size: 13px;
         }
